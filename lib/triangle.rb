@@ -8,13 +8,14 @@ class Triangle
     @side_c = side_c
   end
 
-  def kind 
+  def kind
     if @side_a == @side_b && @side_b == @side_c
       :equilateral
-    elsif @side_a == @side_b || @side_b == @side_c || @side_c == @side_a 
+    elsif @side_a == @side_b || @side_b == @side_c || @side_c == @side_a
       :isosceles
     else
       :scalene
+    end
   end
   # write code here
 end
